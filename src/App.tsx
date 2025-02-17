@@ -1,6 +1,7 @@
 import "./App.css";
 import CardGuidelines from "./components/CardGuidelines";
 import Disclaimer from "./components/Disclaimer";
+import FormContainer from "./components/eventDetails/FormContainer";
 import EventCategoryInput from "./components/events/EventCategoryInput";
 import EventNameInput from "./components/events/EventNameInput";
 import ImageUploadCard from "./components/events/ImageUploadCard";
@@ -9,7 +10,9 @@ import Navbar from "./components/Navbar";
 import TitleCheckbox from "./components/TitleCheckbox";
 import UploadVideo from "./components/UploadVideo";
 import VideoUpload from "./components/VideoUpload";
-
+import Options from "./components/options/Options";
+import Button from "./components/Button";
+import POC from "./components/pointOfContact/POC";
 function App() {
   return (
     <>
@@ -31,15 +34,20 @@ function App() {
               <EventCategoryInput />
             </div>
           </div>
+        </div>
+        <div className="flex flex-col items-center mx-auto mt-[70px] px-4">
           <div>Event Card</div>
           <ImageUploadCard />
-        </div>
 
-        <TitleCheckbox />
-        <UploadVideo />
-        <Disclaimer />
-        <VideoUpload />
-        <CardGuidelines />
+          <TitleCheckbox />
+          <UploadVideo />
+          <Disclaimer />
+          <VideoUpload />
+          <CardGuidelines />
+          <FormContainer/>
+          <Options /> 
+          <POC />
+        </div>
       </div>
     </>
   );
