@@ -75,8 +75,8 @@ export default function Options() {
           <span className="text-xl">+</span> <span className="font-outfit text-lg">Add More</span>
         </Button>
         <Button
-          className="w-[150px] bg-black text-white rounded-[32px] py-6  font-outfit text-lg font-semibold
-                    shadow-[0_0_15px_#58E9D6]
+          className="w-[120px] bg-black text-white rounded-[32px] py-4   font-outfit text-lg font-semibold
+                    shadow-[0_4px_15px_-2px_#58E9D6]
                     border-none"
         >
           Done

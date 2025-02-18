@@ -8,6 +8,7 @@ import ImageUploadCard from "./components/events/ImageUploadCard";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TitleCheckbox from "./components/TitleCheckbox";
+import ImageCard from "./components/events/ImageCard";
 import UploadVideo from "./components/UploadVideo";
 import VideoUpload from "./components/VideoUpload";
 import Options from "./components/options/Options";
@@ -43,7 +44,7 @@ function DashboardApp() {
             </div>
             <div className="flex flex-row gap-8">
               <ImageUploadCard />
-              <ImageUploadCard />
+              <ImageCard />
             </div>
             <div className="my-[30px]">
               <TitleCheckbox />
