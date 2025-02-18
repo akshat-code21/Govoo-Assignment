@@ -11,7 +11,7 @@ export default function EventNameInput() {
           <input
             type="text"
             placeholder="Mohan Yadav R"
-            className="bg-transparent w-full pr-10 outline-none text-gray-400"
+            className="bg-transparent font-outfit w-full pr-10 outline-none text-gray-400"
           />
           <div className="absolute right-4 top-1/2 -translate-y-1/2">
             <UserIcon className="w-6 h-6 text-gray-400" />

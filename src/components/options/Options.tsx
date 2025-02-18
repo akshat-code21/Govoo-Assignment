@@ -66,12 +66,12 @@ export default function Options() {
               </span>
             </div>
           </button>
-        </div>
+        </div>        
       </div>
 
       {/* Buttons */}
       <div className="flex items-center justify-between mt-12">
-        <Button className="flex items-center justify-center gap-5 flex-row text-lg font-semibold p-3  border-2 border-[#26292B] rounded-xl  hover:bg-[#26292B] transition-colors">
+        <Button className="flex items-center border-[rgba(88,233,214,1)] justify-center gap-5 flex-row text-lg font-semibold p-3  border-2 border-[#26292B] rounded-xl  hover:bg-[#26292B] transition-colors">
           <span className="text-xl">+</span> <span className="font-outfit text-lg">Add More</span>
         </Button>
         <Button
