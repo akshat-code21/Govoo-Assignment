@@ -72,18 +72,18 @@ export default function POC() {
         </div>
 
         <div className="flex justify-end">
-          <button className="w-[200px]  mt-[30px] bg-[rgba(30,37,36,1)] text-white rounded-lg py-4 px-6 border border-[#58E9D6] text-lg font-semibold">
+          <button className="w-[200px] font-outfit mt-[30px] bg-[rgba(30,37,36,1)] text-white rounded-lg py-4 px-6 border border-[#58E9D6] text-lg font-semibold">
             Add Section
           </button>
         </div>
         <div className="mt-10 flex justify-end">
-          <Button
-            className=" bg-black font-outfit text-white rounded-[32px] py-6 text-lg font-semibold
-                    shadow-[0_0_40px_rgba(88,233,214,0.3)]
-                    border-none w-[150px]"
-          >
-            Preview
-          </Button>
+        <Button
+          className="w-[150px] bg-black text-white rounded-[32px] py-6  font-outfit text-lg font-semibold
+                    shadow-[0_0_15px_#58E9D6]
+                    border-none"
+        >
+          Preview
+        </Button>
         </div>
       </div>
     </div>

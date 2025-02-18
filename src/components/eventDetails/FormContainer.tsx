@@ -91,7 +91,7 @@ export default function FormContainer() {
                     <div className="text-white font-outfit text-sm">This is the standard price for your tickets <span className="text-red-600">*</span></div>
                 </div>
                 <div className="flex flex-col gap-3">
-                    <label className="text-white font-outfit text-xl">Enter City</label>
+                    <label className="text-white font-outfit text-xl">Total Tickets</label>
                     <button className="flex items-center justify-between w-full bg-[rgba(30,37,36,1)] text-gray-400 px-4 py-5 rounded-xl">
                         <div className="flex items-center gap-2">
                             <span className="text-lg font-outfit text-[#FFFFFF]/[0.25]">Enter Tickets</span>
@@ -104,7 +104,7 @@ export default function FormContainer() {
             <div className="flex items-center gap-2">
             <input 
                 type="checkbox"  
-                className="w-6 h-6 bg-[#1E2524] accent-[#58E9D6] border-[#58E9D6] border-2 rounded-md focus:ring-[#58E9D6] bg-transparent appearance-none checked:bg-[#58E9D6] checked:border-[#58E9D6]"
+                className="w-6 h-6 bg-[#1E2524] accent-[#58E9D6] border-[#58E9D6] border-2 rounded-md focus:ring-[#58E9D6] bg-[rgba(88,233,214,0.3)] appearance-none checked:bg-[#58E9D6] checked:border-[#58E9D6]"
             />
                 <label className="text-white font-outfit">Add Tiered Pricing Options (Optional)</label>
             </div>
