@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import  {useRef, useState } from "react";
 
 export default function EventCategoryInput() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function EventCategoryInput() {
 
   return (
     <>
-      <div className="flex w-[284px] flex-col">
+      <div className="flex w-[284px] pb-5 flex-col">
         <div className="text-white font-outfit font-medium text-lg leading-5 mb-[28px]">
           Event Category
         </div>

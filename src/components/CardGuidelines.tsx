@@ -1,6 +1,6 @@
 export default function CardGuidelines() {
     return (
-        <div className="flex items-center gap-2">
+        <div className="absolute right-0 mt-[10px] flex items-center gap-2">
             <h1 className="text-lg text-white font-outfit">Card Guidelines</h1>
             <a href="#" className="text-teal-500">
                 <svg 

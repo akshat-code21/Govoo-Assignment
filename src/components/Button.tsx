@@ -7,8 +7,6 @@ export default function Button({children,className}: {children: React.ReactNode,
         text-white
         font-semibold
         leading-none
-        px-[41px]
-        py-[13px]
         rounded-lg
         border
         border-[rgba(88,233,214,1)]

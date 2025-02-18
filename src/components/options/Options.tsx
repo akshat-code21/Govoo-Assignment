@@ -1,72 +1,87 @@
+import { ClockIcon } from "@heroicons/react/24/outline";
 import Button from "../Button";
 
 export default function Options() {
-    return (
-        <div className="p-8">
-            <h1 className="text-white text-4xl font-bold mb-12">Tiered Pricing Options</h1>
-            
-            <div className="grid grid-cols-2 gap-x-24 gap-y-8">
-                {/* Left Column */}
-                <div>
-                    <label className="text-white text-2xl font-bold block mb-4">Name</label>
-                    <input 
-                        type="text"
-                        placeholder="e.g Early Bird"
-                        className="w-full p-4 rounded-xl bg-[#1C1F1E] text-gray-400 text-xl"
-                    />
-                </div>
+  return (
+    <div className="">
+      <h1 className="text-white text-2xl font-outfit font-medium mb-12">
+        Tiered Pricing Options
+      </h1>
 
-                {/* Right Column */}
-                <div>
-                    <label className="text-white text-2xl font-bold block mb-4">Price per Ticket</label>
-                    <input 
-                        type="text"
-                        placeholder="Enter Amount"
-                        className="w-full p-4 rounded-xl bg-[#1C1F1E] text-gray-400 text-xl"
-                    />
-                </div>
-
-                {/* Second Row - Left */}
-                <div>
-                    <label className="text-2xl font-bold block mb-4">Availability Deadline</label>
-                    <div className="relative">
-                        <input 
-                            type="text"
-                            placeholder="DD/MM/YYYY"
-                            className="w-full p-4 rounded-xl bg-[#1C1F1E] text-gray-400 text-xl"
-                        />
-                        <button className="absolute right-4 top-1/2 -translate-y-1/2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-gray-400">
-                                <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                                <path d="M12 6v6l4 2" strokeWidth="2"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                {/* Second Row - Right */}
-                <div>
-                    <label className="text-white text-2xl font-bold block mb-4">Slots</label>
-                    <input 
-                        type="text"
-                        placeholder="Limited slots"
-                        className="w-full p-4 rounded-xl bg-[#1C1F1E] text-gray-400 text-xl"
-                    />
-                </div>
+      <div className="grid grid-cols-2 gap-x-24 gap-y-8">
+        {/* Left Column */}
+        <div>
+          <label className="text-white text-lg font-outfit font-medium block mb-4">
+            Name
+          </label>
+          <button className="flex items-center justify-between w-full bg-[rgba(30,37,36,1)] text-gray-400 px-4 py-5 rounded-xl">
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-outfit text-[#FFFFFF]/[0.25]">
+                e.g Early Bird
+              </span>
             </div>
-
-            {/* Buttons */}
-            <div className="flex justify-between mt-12">
-                <Button className="flex items-center flex-row px-12 text-xl font-bold border-2 border-[#26292B] rounded-xl py-3 hover:bg-[#26292B] transition-colors">
-                    + Add More
-                </Button>
-                <Button className="flex items-center flex-row px-12 text-xl font-bold bg-black border-none rounded-xl py-3 text-white
-                    shadow-[0_0_20px_rgba(88,233,214,0.4),0_0_40px_rgba(88,233,214,0.3),0_0_60px_rgba(88,233,214,0.2)]
-                    hover:shadow-[0_0_25px_rgba(88,233,214,0.5),0_0_45px_rgba(88,233,214,0.4),0_0_65px_rgba(88,233,214,0.3)]
-                    transition-all duration-300">
-                    Done
-                </Button>
-            </div>
+          </button>
         </div>
-    )
+
+        {/* Right Column */}
+        <div>
+          <label className="text-white text-lg font-outfit font-medium block mb-4">
+            Price per Ticket
+          </label>
+          <button className="flex items-center justify-between w-full bg-[rgba(30,37,36,1)] text-gray-400 px-4 py-5 rounded-xl">
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-outfit text-[#FFFFFF]/[0.25]">
+                Enter Amount
+              </span>
+            </div>
+          </button>
+        </div>
+
+        {/* Second Row - Left */}
+        <div>
+          <label className="text-white text-lg font-outfit font-medium block mb-4">
+            Availability Deadline
+          </label>
+          <button className="flex items-center justify-between w-full bg-[rgba(30,37,36,1)] text-gray-400 px-4 py-5 rounded-xl">
+            <div className="relative flex items-center justify-between">
+              <span className="text-lg font-outfit text-[#FFFFFF]/[0.25]">
+                DD/MM/YYYY
+              </span>
+            </div>
+            <span className="right-0">
+              <ClockIcon className="w-6 h-6 text-gray-400" />
+            </span>
+          </button>
+        </div>
+
+        {/* Second Row - Right */}
+        <div>
+          <label className="text-white text-lg font-outfit font-medium block mb-4">
+            Slots
+          </label>
+          <button className="flex items-center justify-between w-full bg-[rgba(30,37,36,1)] text-gray-400 px-4 py-5 rounded-xl">
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-outfit text-[#FFFFFF]/[0.25]">
+                Limited slots
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* Buttons */}
+      <div className="flex items-center justify-between mt-12">
+        <Button className="flex items-center justify-center gap-5 flex-row text-lg font-semibold p-3  border-2 border-[#26292B] rounded-xl  hover:bg-[#26292B] transition-colors">
+          <span className="text-xl">+</span> <span className="font-outfit text-lg">Add More</span>
+        </Button>
+        <Button
+            className=" bg-black text-white rounded-[32px] py-6 font-outfit text-lg font-semibold
+                    shadow-[0_0_40px_rgba(88,233,214,0.3)]
+                    border-none w-[150px]"
+          >
+            Done
+          </Button>
+      </div>
+    </div>
+  );
 }

@@ -11,7 +11,6 @@ import TitleCheckbox from "./components/TitleCheckbox";
 import UploadVideo from "./components/UploadVideo";
 import VideoUpload from "./components/VideoUpload";
 import Options from "./components/options/Options";
-import Button from "./components/Button";
 import POC from "./components/pointOfContact/POC";
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
       <div className="bg-black min-h-screen w-full">
         <Navbar />
         <Hero />
-        <div className="container flex flex-col items-center mx-auto mt-[70px] px-4">
-          <div className="flex flex-row gap-8 items-start justify-center w-full">
+        <div className="container flex flex-col items-center mx-auto mt-[100px] ">
+          <div className="flex flex-row gap-14 items-start justify-center w-full">
             <div className="flex flex-col">
               <h1 className="text-white font-outfit font-medium text-2xl mb-4">
                 Event Details
@@ -34,19 +33,40 @@ function App() {
               <EventCategoryInput />
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center mx-auto mt-[70px] px-4">
-          <div>Event Card</div>
-          <ImageUploadCard />
 
-          <TitleCheckbox />
-          <UploadVideo />
-          <Disclaimer />
-          <VideoUpload />
-          <CardGuidelines />
-          <FormContainer/>
-          <Options /> 
-          <POC />
+          <div className="mt-[70px] pl-[50px]">
+            <div className="text-white font-outfit font-medium text-2xl mb-4">
+              Event Cards
+            </div>
+            <div className="flex flex-row gap-8">
+              <ImageUploadCard />
+              <ImageUploadCard />
+            </div>
+            <div className="my-[30px]">
+              <TitleCheckbox />
+            </div>
+            <div className="my-[30px]">
+              <UploadVideo />
+            </div>
+            <div className="my-[30px] text-center">
+              <Disclaimer />
+            </div>
+            <div className="mt-[30px]">
+              <VideoUpload />
+            </div>
+            <div className="relative right-0">
+              <CardGuidelines />
+            </div>
+            <div className="mt-[80px]">
+              <FormContainer />
+            </div>
+            <div className="my-[80px]">
+              <Options />
+            </div>
+            <div className="my-[30px]">
+              <POC />
+            </div>
+          </div>
         </div>
       </div>
     </>

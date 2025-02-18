@@ -1,3 +1,5 @@
+import { UserIcon } from "@heroicons/react/24/outline";
+
 export default function EventNameInput() {
   return (
     <>
@@ -5,20 +7,16 @@ export default function EventNameInput() {
         <div className="text-white font-outfit font-medium text-lg leading-5 mb-[28px]">
           Event Name
         </div>
-        <input
-          type="text"
-          placeholder="Mohan Yadav R"
-          maxLength={16}
-          aria-label="Event name"
-          className="w-[284px] h-[66px] rounded-[12px] bg-[rgba(30,37,36,1)] text-[#FFFFFF]/[0.25] font-outfit font-medium text-lg leading-[32px] px-4"
-          style={{
-            backgroundImage: `url()`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right 24px center",
-            backgroundSize: "40px",
-          }}
-        />
-        
+        <div className="relative bg-[rgba(30,37,36,1)] rounded-lg p-5">
+          <input
+            type="text"
+            placeholder="Mohan Yadav R"
+            className="bg-transparent w-full pr-10 outline-none text-gray-400"
+          />
+          <div className="absolute right-4 top-1/2 -translate-y-1/2">
+            <UserIcon className="w-6 h-6 text-gray-400" />
+          </div>
+        </div>
       </div>
     </>
   );
